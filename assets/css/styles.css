@@ -34,3 +34,17 @@ body {
     background-repeat: repeat;
     background-size: cover;
 }
+
+.card-img-top {
+    width: 100%;
+    height: 20vh;
+}
+
+.card {
+    height: 100%;
+}
+
+.text-footer {
+    color: #fff;
+    transition: 0.5s;
+}
