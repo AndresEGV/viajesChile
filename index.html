@@ -7,8 +7,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="/assets/img/viajes.svg" type="image/x-icon">
     <link rel="preconnect" href="https://fonts.gstatic.com">
+
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+
     <!-- CDN FontAwesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
 
@@ -20,41 +22,37 @@
     <title>Viajes Chile</title>
 </head>
 
-<body>
+<body data-spy="scroll" data-target=".navbar" data-offset="50">
 
     <!-- ------------- Sección del NavBar -------------- -->
 
-    <header class="fixed-top">
-        <div class="container-fluid bg-dark">
-            <div class="container">
-                <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-                    <a class="navbar-brand" href="#">
-                        <img src="/assets/img/viajes.svg" width="30" height="30" alt="" /> Viajes Chile
-                    </a>
-                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-transparent fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="/assets/img/viajes.svg" width="30" height="30" alt="" /> Viajes Chile
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
             </button>
-                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                        <ul class="navbar-nav ml-auto">
-                            <li class="nav-item active">
-                                <a class="nav-link" href="#">Inicio <span class="sr-only">(current)</span></a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Quienes somos</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Destacados</a>
-                            </li>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Inicio <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link somos" href="#quien">Quienes somos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#destacados">Destacados</a>
+                    </li>
 
-                            <li class="nav-item">
-                                <a class="nav-link " href="#">Contacto</a>
-                            </li>
-                        </ul>
-                    </div>
-                </nav>
+                    <li class="nav-item">
+                        <a class="nav-link " href="#contacto">Contacto</a>
+                    </li>
+                </ul>
             </div>
         </div>
-    </header>
+    </nav>
 
     <!-- --------Fin Seccion del NavBar----------- -->
 
@@ -80,18 +78,21 @@
             </a>
         </div>
     </section>
+
     <!-- --Fin seccion carrusel -->
 
 
 
     <!-- Sección Quienes Somos -->
-    <section class="text-white py-5 d-none d-md-block">
+
+    <section class="text-white py-5 d-none d-md-block" id="quien">
         <div class="container">
             <h1 class="text-center">¿Quiénes somos?</h1>
             <hr class="linea">
             <div class="row">
                 <div class="col-12 col-md-4 p-4">
-                    <p class="bg-info text-center"><i class="fas fa-plane fa-2x"></i></p>
+                    <!-- --Se añadio tooltip -->
+                    <p class="bg-info text-center" data-toggle="tooltip" data-placement="top" title="Si quieres saber mas sigue leyendo"><i class="fas fa-plane fa-2x"></i></p>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo reprehenderit ipsam nobis similique cumque quia non consectetur neque ratione ab qui illo, ullam, est magnam a veniam inventore eum, facilis eaque! Illum molestias
                         est dolorem a consectetur debitis repellendus rem, totam quam et voluptatibus dicta, voluptates excepturi quod reprehenderit ut inventore autem doloribus, praesentium qui labore at? Tempora similique asperiores explicabo natus
                         velit modi ratione pariatur ipsam ex! Nemo quasi error repudiandae magnam maiores recusandae consequuntur ab ducimus soluta, debitis quibusdam aliquam natus suscipit voluptatum ea est quaerat! Iure sit ex reprehenderit rem, cumque
@@ -103,10 +104,14 @@
                         est dolorem a consectetur debitis repellendus rem, totam quam et voluptatibus dicta, voluptates excepturi quod reprehenderit ut inventore autem doloribus, praesentium qui labore at? Tempora similique asperiores explicabo natus
                         velit modi ratione pariatur ipsam ex! Nemo quasi error repudiandae magnam maiores recusandae consequuntur ab ducimus soluta, debitis quibusdam aliquam natus suscipit voluptatum ea est quaerat! Iure sit ex reprehenderit rem, cumque
                         corporis id fugit dolorum tempore excepturi consequuntur incidunt a praesentium beatae minima voluptatum molestiae soluta omnis cum accusamus sapiente in obcaecati recusandae pariatur? Cumque, neque rerum</p>
-                    <p class="bg-info text-center"><i class="fas fa-mountain fa-2x"></i></p>
+
+                    <!-- --Se añadio tooltip -->
+                    <p class="bg-info text-center " data-toggle="tooltip" data-placement="bottom" title="Las mejores ofertas para ti"><i class="fas fa-mountain fa-2x"></i></p>
                 </div>
+
                 <div class="col-12 col-md-4 p-4">
-                    <p class="bg-info text-center"><i class="fas fa-route fa-2x"></i></p>
+                    <!-- --Se añadio tooltip -->
+                    <p class="bg-info text-center" data-toggle="tooltip" data-placement="top" title="Somos la mejor agencia de chile!"><i class="fas fa-route fa-2x"></i></p>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo reprehenderit ipsam nobis similique cumque quia non consectetur neque ratione ab qui illo, ullam, est magnam a veniam inventore eum, facilis eaque! Illum molestias
                         est dolorem a consectetur debitis repellendus rem, totam quam et voluptatibus dicta, voluptates excepturi quod reprehenderit ut inventore autem doloribus, praesentium qui labore at? Tempora similique asperiores explicabo natus
                         velit modi ratione pariatur ipsam ex! Nemo quasi error repudiandae magnam maiores recusandae consequuntur ab ducimus soluta, debitis quibusdam aliquam natus suscipit voluptatum ea est quaerat! Iure sit ex reprehenderit rem, cumque
@@ -115,96 +120,60 @@
             </div>
         </div>
     </section>
+
     <!-- --Fin seccion Quienes Somos -->
 
 
 
 
     <!-------- Seccion Destacados ------------ -->
-    <section class="text-white py-5">
+
+    <section class="text-white py-5" id="destacados">
         <div class="container-fluid">
             <div class="container">
                 <h1 class="text-center">Destacados</h1>
                 <hr class="linea">
-                <!-- <div class="row">
-                    <div class="card-deck col-12">
-                        <div class="card my-3">
-                            <img src="/assets/img/card1.jpg" class=" card-img-top" alt="...">
-                            <div class=" card-body bg-info">
-                                <h5 class="card-title">Lorem ipsum dolor sit amet</h5>
-                                <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-
-                            </div>
-                        </div>
-                        <div class="card my-3">
-                            <img src="/assets/img/card2.jpg" class=" card-img-top" alt="...">
-                            <div class="card-body bg-info">
-                                <h5 class="card-title">Lorem ipsum dolor sit amet consectetur.</h5>
-                                <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
-
-                            </div>
-                        </div>
-                        <div class="card my-3">
-                            <img src="/assets/img/card3.jpg" class="card-img-top" alt="...">
-                            <div class="card-body bg-info">
-                                <h5 class="card-title">Lorem ipsum dolor sit amet consectetur adipisicing elit.</h5>
-                                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
-
-                            </div>
-                        </div>
-                        <div class="card my-3">
-                            <img src="/assets/img/card4.jpg" class="card-img-top" alt="...">
-                            <div class="card-body bg-info">
-                                <h5 class="card-title">Lorem ipsum dolor sit.</h5>
-                                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
-
-                            </div>
-                        </div>
-                    </div>
-                </div> -->
 
                 <div class="row">
-                    <div class="col-sm-6 col-md-4 col-lg-3">
-                        <div class="card">
-                            <img src="/assets/img/card1.jpg" class="card-img-top" alt="...">
-                            <div class="card-block">
-                                <h3 class="card-title">The title</h3>
-                                <div class="card-text">
-                                    The text
-                                </div>
+                    <div class="col-12 col-sm-6 col-md-3 py-2">
+                        <div class="card bg-info">
+                            <!-- Se integro un popover -->
+                            <div class="imagen1 card-img-top" data-container="body" data-toggle="popover" data-placement="top" data-content="Conoce lugares maravillosos de Chile"></div>
+                            <div class="card-body">
+                                <h5 class="card-title">Lorem ipsum dolor sit amet.</h5>
+                                <p class="card-text ">
+                                    Some quick example text to build on the card title and make up the bulk of the card's content.
+                                </p>
                             </div>
                         </div>
                     </div>
-                    <div class="col-sm-6 col-md-4 col-lg-3">
-                        <div class="card">
-                            <img src="/assets/img/card2.jpg" class="card-img-top" alt="...">
-                            <div class="card-block">
-                                <h3 class="card-title">The title</h3>
-                                <div class="card-text">
-                                    The text
-                                </div>
+                    <div class="col-12 col-sm-6 col-md-3 py-2">
+                        <div class="card bg-info">
+                            <!-- Se integro un popover -->
+                            <div class="imagen2 card-img-top" data-container="body" data-toggle="popover" data-placement="top" data-content="Disfruta de unas merecidas vacaciones"></div>
+                            <div class="card-body">
+                                <h5 class="card-title">Dolor sit Amet</h5>
+                                <p class="card-text ">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                             </div>
                         </div>
                     </div>
-                    <div class="col-sm-6 col-md-4 col-lg-3">
-                        <div class="card">
-                            <img src="/assets/img/card3.jpg" class="card-img-top" alt="...">
-                            <div class="card-block">
-                                <h3 class="card-title">The title</h3>
-                                <div class="card-text">
-                                    The text
-                                </div>
+                    <div class="col-12 col-sm-6 col-md-3 py-2">
+                        <div class="card bg-info">
+                            <!-- Se integro un popover -->
+                            <div class="imagen3 card-img-top" data-container="body" data-toggle="popover" data-placement="top" data-content="Animate a vivir una experiencia con nostros"></div>
+                            <div class="card-body">
+                                <h5 class="card-title">Pietat et Literae</h5>
+                                <p class="card-text ">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                             </div>
                         </div>
                     </div>
-                    <div class="col-sm-6 col-md-3 col-lg-3">
-                        <div class="card">
-                            <img src="/assets/img/card4.jpg" class="card-img-top" alt="...">
-                            <div class="card-block">
-                                <h3 class="card-title">The title</h3>
-                                <div class="card-text">
-                                    The text
-                                </div>
+                    <div class="col-12 col-sm-6 col-md-3 py-2">
+                        <div class="card bg-info">
+                            <!-- Se integro un popover -->
+                            <div class="imagen4 card-img-top" data-container="body" data-toggle="popover" data-placement="top" data-content="Somos la agencia N°1 en Chile"></div>
+                            <div class="card-body">
+                                <h5 class="card-title">Tempus fugito</h5>
+                                <p class="card-text ">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                             </div>
                         </div>
                     </div>
@@ -213,13 +182,15 @@
 
         </div>
     </section>
+
     <!-- -------- Fin seccion Destacados ---------->
 
 
 
 
     <!-- ----------- Seccion Contacto ---------- -->
-    <section class="text-white py-5">
+
+    <section class="text-white py-5" id="contacto">
         <div class="container">
             <h1 class="text-center">Contacto</h1>
             <hr class="linea">
@@ -230,19 +201,20 @@
                 </div>
             </div>
         </div>
-
     </section>
+
     <!-- -------Fin Seccion Contacto ----------- -->
 
 
 
 
     <!-- --------- Footer ---------- -->
+
     <footer class="bg-info text-white">
         <div class="container">
-            <div class="row align-items-center ">
+            <div class="row align-items-center py-2">
                 <div class="col-12 col-md-6 text-center">
-                    <p class="display-4">Viajes chile</p>
+                    <p class="h4">VIAJES CHILE</p>
                 </div>
                 <div class="col-12 col-md-6 text-center">
                     <a href="https://github.com/" target="_blank" class="text-decoration-none text-footer px-3" data-toggle="tooltip" data-placement="top" title="github">
@@ -261,8 +233,8 @@
             </div>
         </div>
     </footer>
-    <!-- ------Fin Footer -------- -->
 
+    <!-- ------Fin Footer -------- -->
 
 
 
@@ -274,6 +246,7 @@
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js" integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF" crossorigin="anonymous"></script>
     <!-- Script TypeForm -->
+
     <script>
         (function() {
             var qs, js, q, s, d = document,
@@ -291,7 +264,9 @@
             }
         })()
     </script>
+
     <!-- Script propio -->
+
     <script src="/assets/js/index.js"></script>
 
 </body>
