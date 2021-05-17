@@ -49,7 +49,7 @@ body {
 }
 
 .img-2 {
-    background-image: url("./assets/img/carousel2.jpg");
+    background-image: url("../carousel2.jpg");
     height: 100vh;
     width: 100%;
     background-repeat: repeat;
@@ -58,7 +58,7 @@ body {
 }
 
 .img-3 {
-    background-image: url("./assets/img/carousel3.jpg");
+    background-image: url("../carousel3.jpg");
     height: 100vh;
     width: 100%;
     background-repeat: repeat;
@@ -73,7 +73,7 @@ body {
 /* Imagenes de las cards de seccion destacados */
 
 .imagen1 {
-    background-image: url("./assets/img/card1.jpg");
+    background-image: url("../card1.jpg");
     height: 120px;
     background-repeat: no-repeat;
     background-size: cover;
@@ -81,7 +81,7 @@ body {
 }
 
 .imagen2 {
-    background-image: url("./assets/img/card2.jpg");
+    background-image: url("../card2.jpg");
     height: 120px;
     background-repeat: no-repeat;
     background-size: cover;
@@ -89,7 +89,7 @@ body {
 }
 
 .imagen3 {
-    background-image: url("./assets/img/card3.jpg");
+    background-image: url("../card3.jpg");
     height: 120px;
     background-repeat: no-repeat;
     background-size: cover;
@@ -97,7 +97,7 @@ body {
 }
 
 .imagen4 {
-    background-image: url("./assets/img/card4.jpg");
+    background-image: url("../card4.jpg");
     height: 120px;
     background-repeat: no-repeat;
     background-size: cover;
